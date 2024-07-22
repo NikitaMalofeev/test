@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import path from 'path';
 
 const app = express();
 const port = 3001;
@@ -17,6 +18,8 @@ app.get('/', (req: Request, res: Response) => {
 app.get('/data', (req: Request, res: Response) => {
     res.json({ amount: serverCounter });
 });
+
+app.use('/videos', express.static(path.join(__dirname, 'public/videos')));
 
 app.post('/data', (req: Request, res: Response) => {
     const { action, amount } = req.body;

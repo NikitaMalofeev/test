@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "roles": [
+        "user"
+      ]
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "adminpass",
+      "roles": [
+        "admin"
+      ]
+    },
+    {
+      "id": "8b21",
+      "username": "1",
+      "password": "1"
+    },
+    {
+      "id": "7a03",
+      "username": "2",
+      "password": "2"
+    },
+    {
+      "id": "c3b7",
+      "username": "5",
+      "password": "5"
+    },
+    {
+      "id": "f137",
+      "username": "6",
+      "password": "6"
+    }
+  ],
+  "tests": [
+    {
+      "id": 1,
+      "question": "firstQuestion",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ]
+}

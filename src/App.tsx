@@ -1,12 +1,12 @@
 import React from 'react';
-import Counter from './features/counter/Counter';
+import { BrowserRouter as Router } from 'react-router-dom';
+import MainRouter from './app/providers/router';
 
 const App: React.FC = () => {
     return (
-        <div>
-            <h1>My Vite App</h1>
-            <Counter />
-        </div>
+        <Router>
+            <MainRouter />
+        </Router>
     );
 };
 
